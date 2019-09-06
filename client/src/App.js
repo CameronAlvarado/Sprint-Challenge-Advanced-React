@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from "./components/Header.js";
 import PlayerList from './components/PlayerList.js';
 import axios from 'axios';
