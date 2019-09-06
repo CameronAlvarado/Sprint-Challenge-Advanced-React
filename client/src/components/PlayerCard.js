@@ -9,6 +9,7 @@ function PlayerCard(props) {
             <Card color='green'>
                 <Card.Content>
                     <Card.Header>
+                        {console.log(props.playerData.name)}
                         {props.playerData.name}
                     </Card.Header>
                     <Card.Meta>

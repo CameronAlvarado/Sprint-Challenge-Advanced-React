@@ -6,14 +6,12 @@ import axios from 'axios';
 
 class App extends React.Component {
 
-  // constructor() {
-  //   super();
-  //   this.state={}
-  // }
-
-  state = {
-    players: []
-  };
+  constructor() {
+    super();
+    this.state = {
+      players: []
+    };
+  }
 
   componentDidMount() {
       axios
