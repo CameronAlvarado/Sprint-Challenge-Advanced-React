@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
+import PlayerCard from './components/PlayerCard';
+import PlayerList from './components/PlayerList';
+import Header from './components/Header.js'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test("App renders without crashing", () => {
+  render(<App />);
+});
+
+test('should have text world cup', ()=>{
+  const {getByText} = render(<Header />);
+  getByText(/world cup/i);
 });

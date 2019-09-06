@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  text-shadow: 0px 0px 5px lightgrey;
+  padding: 10px;
+  /* background: rgb(99,99,99);
+  background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 80%, rgba(99,99,99,1) 100%); */
+}
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 3%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+}
+
+.dark-mode__toggle {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(255,185,185,1) 35%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+  border-radius: 50px;
+box-shadow: 0px 0px 20px lightgray;
+  height: 20px;
+  position: relative;
+  width: 56px;
+}
+
+.toggle {
+  background: black;
+  border-radius: 50px;
+  border: 3px solid dodgerblue;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+
+  .navbar {
+    background-color: #1F2022;
+    border: none;
+  }
+}
