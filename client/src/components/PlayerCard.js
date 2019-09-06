@@ -6,7 +6,7 @@ function PlayerCard(props) {
 
     return (
           <Grid.Column>
-            <Card color='green'>
+            <Card color='blue'>
                 <Card.Content>
                     <Card.Header>
                         {console.log(props.playerData.name)}
