@@ -9,9 +9,7 @@ test("App renders without crashing", () => {
   render(<App />);
 });
 
-test('should have text Marta', ()=>{
+test('should have text world cup', ()=>{
   const {getByText} = render(<Header />);
   getByText(/world cup/i);
 });
-
-
